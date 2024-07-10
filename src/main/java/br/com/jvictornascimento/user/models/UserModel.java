@@ -12,7 +12,7 @@ public class UserModel {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID userId;
-    private String nome;
+    private String name;
     private String email;
 
     public UUID getUserId() {
@@ -23,12 +23,12 @@ public class UserModel {
         this.userId = userId;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getEmail() {
@@ -56,7 +56,7 @@ public class UserModel {
     public String toString() {
         return "UserModel{" +
                 "userId=" + userId +
-                ", nome='" + nome + '\'' +
+                ", nome='" + name + '\'' +
                 ", email='" + email + '\'' +
                 '}';
     }
